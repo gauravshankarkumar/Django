@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontEnd Assingement</title>
+  </head>
+  <body bgcolor="grey">
+    <h1>Welcome to {{title}}</h1>
+    <p><a href="{{link}}">Go to {{button}} Page</a></p>
+    <p><a href="http://127.0.0.1:8000/form">Go to Form Page</a></p>
+    <li><a href="/admin">Go to Admin Page</a></li>
+
+    {% if user.is_authenticated %}
+    <li><a href="/app4/logout">Logout</a></li>
+
+    {% else %}
+    <li><a href="/app2/signup">Go to Signup Page</a></li>
+    <li><a href="/app3/login">Go to login Page</a></li>
+
+    {% endif %}
+  </body>
+</html>

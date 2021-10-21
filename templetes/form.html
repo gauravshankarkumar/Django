@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body bgcolor="yellow">
+    <form action="expression" method="post">
+      {% csrf_token %} 1st value:<input type="text" name="text1" /> 2nd
+      value:<input type="text" name="text2" />
+      <input type="submit" />
+    </form>
+    <h1>Welcome to {{title}}</h1>
+    <a href="{{link}}">Go to {{button}} Page</a>
+    <li><a href="/admin">Go to Admin Page</a></li>
+    <li><a href="/app2/signup">Go to Signup Page</a></li>
+  </body>
+</html>
